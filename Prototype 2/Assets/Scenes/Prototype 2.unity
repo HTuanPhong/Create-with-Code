@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 174777589}
   - component: {fileID: 174777588}
   - component: {fileID: 174777587}
+  - component: {fileID: 174777591}
   m_Layer: 0
   m_Name: SpawnManager (1)
   m_TagString: Untagged
@@ -362,6 +363,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &174777591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174777586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c0e1f24e2ce4a5b9bf1f3a7499cd45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjects: []
+  objectToPool: {fileID: 5392083191060902714, guid: 7a41febc13444b247bc746562a5c94f8, type: 3}
+  amountToPool: 20
 --- !u!1001 &243230245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -414,10 +430,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4244327716557746987, guid: 814f4326a50812947b2469896d89a215, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100046, guid: 814f4326a50812947b2469896d89a215, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1882321540}
   m_SourcePrefab: {fileID: 100100000, guid: 814f4326a50812947b2469896d89a215, type: 3}
 --- !u!1 &425805626
 GameObject:
@@ -740,6 +760,7 @@ GameObject:
   - component: {fileID: 596689225}
   - component: {fileID: 596689224}
   - component: {fileID: 596689223}
+  - component: {fileID: 596689227}
   m_Layer: 0
   m_Name: SpawnManager (2)
   m_TagString: Untagged
@@ -850,6 +871,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &596689227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596689222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c0e1f24e2ce4a5b9bf1f3a7499cd45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjects: []
+  objectToPool: {fileID: 5392083191060902714, guid: 7a41febc13444b247bc746562a5c94f8, type: 3}
+  amountToPool: 20
 --- !u!1 &912240321
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,6 +898,7 @@ GameObject:
   - component: {fileID: 912240322}
   - component: {fileID: 912240325}
   - component: {fileID: 912240324}
+  - component: {fileID: 912240326}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -972,6 +1009,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912240321}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &912240326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912240321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c0e1f24e2ce4a5b9bf1f3a7499cd45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjects: []
+  objectToPool: {fileID: 5392083191060902714, guid: 7a41febc13444b247bc746562a5c94f8, type: 3}
+  amountToPool: 20
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,6 +1284,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1882321534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100046, guid: 814f4326a50812947b2469896d89a215, type: 3}
+  m_PrefabInstance: {fileID: 243230245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1882321540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882321534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e917c52987daa41af6a0305d9813c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 5392083191060902714, guid: 7a41febc13444b247bc746562a5c94f8, type: 3}
 --- !u!1001 &3755387509696308616
 PrefabInstance:
   m_ObjectHideFlags: 0

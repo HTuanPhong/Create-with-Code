@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 699618904535034432}
   - component: {fileID: 1704547363524054309}
   - component: {fileID: 7810103000528445418}
-  - component: {fileID: 6868072259921839680}
   - component: {fileID: 2129625312900461854}
   - component: {fileID: 3262969138213630225}
+  - component: {fileID: 3089475530979952584}
   m_Layer: 0
   m_Name: Food_Steak_01
   m_TagString: Food
@@ -103,18 +103,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
---- !u!114 &6868072259921839680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5392083191060902714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62373792707c8cd4fa57b2a06e6c75f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &2129625312900461854
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -163,3 +151,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.46739918, y: 0.08559368, z: 0.6615112}
   m_Center: {x: 0, y: 0.04279684, z: 0}
+--- !u!114 &3089475530979952584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5392083191060902714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c52ee72091692143869a36cdefe1fd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

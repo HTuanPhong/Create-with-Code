@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
         MoveAction.Enable();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         moveInput = MoveAction.ReadValue<Vector2>();
 
